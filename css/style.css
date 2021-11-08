@@ -1,0 +1,198 @@
+/* *General Styling */
+:root {
+  --nearblack: #1a1a1a;
+  --nearwhite: #e6e6e6;
+  --linkcolor: #6489c8;
+  --errorred: #ff0000;
+  --calcyell: #fcba03;
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.2em;
+  color: var(--nearwhite);
+  background-color: var(--nearblack);
+}
+
+a:visited {
+  color: var(--linkcolor);
+}
+
+textarea {
+  width: 20em;
+  height: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 20em;
+  height: 2em;
+  border-radius: 5px;
+}
+
+button,
+#mplayer-input-label {
+  background-color: var(--nearblack);
+  border: 1px solid var(--nearwhite);
+  border-radius: 5px;
+  color: var(--nearwhite);
+  padding: 10px;
+  width: 126px;
+}
+
+button:hover,
+#mplayer-input-label:hover {
+  cursor: pointer;
+  color: var(--nearblack);
+  background-color: var(--nearwhite);
+  border-color: var(--nearblack);
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  margin: 10px 0;
+}
+
+legend {
+  margin: 0 auto;
+  font-size: 2em;
+  font-style: italic;
+}
+
+/* * Focused styling */
+/* Display blocks something with margins*/
+.dis-b {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* !Index */
+#index-table td,
+#index-table th {
+  border: 1px solid var(--nearwhite);
+  padding: 5px;
+}
+
+#index-table {
+  margin-bottom: 10px;
+}
+
+#index-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* !Caecypher App */
+/* Caesar cypher results paragraph */
+#cae-results {
+  display: none;
+  padding: 10px;
+  border: 1px solid var(--nearwhite);
+  border-radius: 5px;
+}
+
+/* !Calculatron App */
+/* Calculatron body */
+
+#calc-div,
+#calc-body {
+  margin: 0 auto;
+}
+
+#calc-div {
+  width: 40%;
+}
+/* Calculatron big button font */
+.calc-sym,
+.calc-num,
+.calc-dot,
+.calc-equals,
+.calc-AC,
+.calc-special,
+.calc-CE {
+  font-size: 0.9em;
+  width: 5rem;
+  border: none;
+}
+
+.calc-num {
+  background-color: var(--calcyell);
+  color: var(--nearblack);
+}
+
+/* Calculatron screens */
+#calc-results,
+#calc-screen,
+#calc-messages {
+  font-size: 15px;
+  width: 20rem;
+  display: block;
+  margin: 5px auto;
+  height: 2em;
+  background-color: var(--nearwhite);
+}
+
+#calc-messages {
+  color: var(--errorred);
+}
+
+/* !Diceroll App */
+/* Diceroll body */
+#dice-body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Dice images */
+.dice-img {
+  margin: 5px 5px 5px 0px;
+}
+
+/* Dice animations */
+.dice-show {
+  animation: dice-show 250ms 1;
+}
+
+.dice-fade {
+  animation: dice-fade 250ms 1;
+}
+@keyframes dice-show {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 32px;
+  }
+}
+
+@keyframes dice-fade {
+  from {
+    width: 32px;
+  }
+  to {
+    width: 1px;
+  }
+}
+
+/* !MPlayer App */
+#mplayer-body {
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+}
+
+audio,
+#mplayer-input {
+  margin: 0 auto;
+}
+
+#mplayer-input {
+  display: none;
+}
+
+/* Label is personalized alongside buttons on lines 33, 43 */

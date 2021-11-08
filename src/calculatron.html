@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/calculatron-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Calculatron</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>My own take on a calculator app</p>
+    <p>May or may not contain more operators in the future</p>
+
+    <div id="calc-div">
+      <fieldset>
+        <legend>Calculatron</legend>
+        <table id="calc-body">
+          <input type="text" id="calc-messages" placeholder="No errors logged" disabled />
+          <input type="text" id="calc-results" placeholder="Result screen" disabled />
+          <input type="text" id="calc-screen" placeholder="Number screen" disabled />
+          <tr>
+            <td><button class="calc-AC">AC</button></td>
+            <td><button class="calc-special">√</button></td>
+            <td><button class="calc-sym">xⁿ</button></td>
+            <td><button class="calc-sym">%</button></td>
+          </tr>
+          <tr>
+            <td><button class="calc-CE">CE</button></td>
+            <td><button class="calc-special">sin()</button></td>
+            <td><button class="calc-special">cos()</button></td>
+            <td><button class="calc-special">tan()</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button class="calc-special">log<sub>10</sub></button>
+            </td>
+            <td>
+              <button class="calc-special">ln</button>
+            </td>
+            <td><button class="calc-sym">EXP</button></td>
+            <td><button class="calc-special">π</button></td>
+          </tr>
+          <tr>
+            <td><button class="calc-num">9</button></td>
+            <td><button class="calc-num">8</button></td>
+            <td><button class="calc-num">7</button></td>
+            <td><button class="calc-sym">÷</button></td>
+          </tr>
+          <tr>
+            <td><button class="calc-num">6</button></td>
+            <td><button class="calc-num">5</button></td>
+            <td><button class="calc-num">4</button></td>
+            <td><button class="calc-sym">x</button></td>
+          </tr>
+          <tr>
+            <td><button class="calc-num">3</button></td>
+            <td><button class="calc-num">2</button></td>
+            <td><button class="calc-num">1</button></td>
+            <td><button class="calc-sym">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="calc-num">0</button></td>
+            <td><button class="calc-dot">.</button></td>
+            <td><button class="calc-equals">=</button></td>
+            <td><button class="calc-sym">+</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/calculatron.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/mplayer-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Web Music Player</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program plays music from your computer, simple as that</p>
+    <p>Click on the <strong>Upload a song</strong>, select a song from your device then click <strong>Load</strong> and voila, it's read to play a song</p>
+    <div id="mplayer-body">
+      <fieldset>
+        <legend>MPlayer</legend>
+        <label id="mplayer-input-label" for="mplayer-input">Upload a song</label>
+        <input id="mplayer-input" type="file" accept=".mp3,.wav,.ogg" />
+        <button id="mplayer-upl-btn">Load</button>
+        <audio id="mplayer-audio" class="dis-b" controls>
+          <source src="" id="mplayer-audio-src" />
+        </audio>
+        <p id="mplayer-mplaying"></p>
+      </fieldset>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/mplayer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/dice-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Diceroller</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program randomizes dice rolls. Useful for whenever you need a random factor</p>
+    <p>Be careful when inputting large numbers of dices</p>
+
+    <div id="dice-body">
+      <input id="dice-input" type="number" step="0" placeholder="Input dices qty" />
+      <button id="dice-add-btn">Add dices</button>
+      <button id="dice-clear-btn">Clear dices</button>
+      <button id="dice-roll-btn">ROLL!</button>
+      <div id="dice-container"></div>
+    </div>
+    <p id="dice-maxroll"></p>
+    <p id="dice-minroll"></p>
+    <p id="dice-roll"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/dice.js"></script>
+  </body>
+</html>
