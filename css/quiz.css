@@ -1,0 +1,22 @@
+/* General styling */
+button {
+  margin: 50px 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 20px;
+}
+
+label {
+  margin: 5px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* Quiz answer button */
+#quiz-answer {
+  display: none;
+}

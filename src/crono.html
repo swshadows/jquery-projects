@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/clock-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/clock.css" type="text/css" />
+    <title>Cronometer</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program is a simple cronometer. Not too much to say here :P</p>
+
+    <div id="crono-body">
+      <div class="d-flcenter">
+        <button id="crono-start">Start</button>
+        <button id="crono-lap">Lap</button>
+        <button id="crono-reset">Reset</button>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Cronometron</legend>
+          <p id="crono-time">0:00:0000</p>
+        </fieldset>
+
+        <div id="crono-laps">
+          <div class="d-flcenter">Lap Counter</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/crono.js"></script>
+  </body>
+</html>

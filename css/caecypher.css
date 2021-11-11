@@ -1,0 +1,7 @@
+/* Caesar cypher results paragraph */
+#cae-results {
+  display: none;
+  padding: 10px;
+  border: 1px solid var(--nearwhite);
+  border-radius: 5px;
+}

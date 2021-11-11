@@ -1,0 +1,36 @@
+/* Diceroll body */
+#dice-body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Dice images */
+.dice-img {
+  margin: 5px 5px 5px 0px;
+}
+
+/* Dice animations */
+.dice-show {
+  animation: dice-show 250ms 1;
+}
+
+.dice-fade {
+  animation: dice-fade 250ms 1;
+}
+@keyframes dice-show {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 32px;
+  }
+}
+
+@keyframes dice-fade {
+  from {
+    width: 32px;
+  }
+  to {
+    width: 1px;
+  }
+}

@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/calculatron-icon.png" type="image/png" />
+    <link rel="icon" href="../assets/icons/calculatron-icon.png" type="image/png" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/calculatron.css" type="text/css" />
     <title>Calculatron</title>
   </head>
   <body>
@@ -13,58 +14,58 @@
     <p>My own take on a calculator app</p>
     <p>May or may not contain more operators in the future</p>
 
-    <div id="calc-div">
+    <div id="calc-div" class="calc-body">
       <fieldset>
         <legend>Calculatron</legend>
-        <table id="calc-body">
-          <input type="text" id="calc-messages" placeholder="No errors logged" disabled />
-          <input type="text" id="calc-results" placeholder="Result screen" disabled />
-          <input type="text" id="calc-screen" placeholder="Number screen" disabled />
+        <table id="calc-body" class="calc-body">
+          <input type="text" id="calc-messages" class="calc-screen" placeholder="No errors logged" disabled />
+          <input type="text" id="calc-results" class="calc-screen" placeholder="Result screen" disabled />
+          <input type="text" id="calc-screen" class="calc-screen" placeholder="Number screen" disabled />
           <tr>
-            <td><button class="calc-AC">AC</button></td>
-            <td><button class="calc-special">√</button></td>
-            <td><button class="calc-sym">xⁿ</button></td>
-            <td><button class="calc-sym">%</button></td>
+            <td><button class="calc-AC calc-btn">AC</button></td>
+            <td><button class="calc-special calc-btn">√</button></td>
+            <td><button class="calc-sym calc-btn">xⁿ</button></td>
+            <td><button class="calc-sym calc-btn">%</button></td>
           </tr>
           <tr>
-            <td><button class="calc-CE">CE</button></td>
-            <td><button class="calc-special">sin()</button></td>
-            <td><button class="calc-special">cos()</button></td>
-            <td><button class="calc-special">tan()</button></td>
+            <td><button class="calc-CE calc-btn">CE</button></td>
+            <td><button class="calc-special calc-btn">sin()</button></td>
+            <td><button class="calc-special calc-btn">cos()</button></td>
+            <td><button class="calc-special calc-btn">tan()</button></td>
           </tr>
           <tr>
             <td>
-              <button class="calc-special">log<sub>10</sub></button>
+              <button class="calc-special calc-btn">log<sub>10</sub></button>
             </td>
             <td>
-              <button class="calc-special">ln</button>
+              <button class="calc-special calc-btn">ln</button>
             </td>
-            <td><button class="calc-sym">EXP</button></td>
-            <td><button class="calc-special">π</button></td>
+            <td><button class="calc-sym calc-btn">EXP</button></td>
+            <td><button class="calc-special calc-btn">π</button></td>
           </tr>
           <tr>
-            <td><button class="calc-num">9</button></td>
-            <td><button class="calc-num">8</button></td>
-            <td><button class="calc-num">7</button></td>
-            <td><button class="calc-sym">÷</button></td>
+            <td><button class="calc-num calc-btn">9</button></td>
+            <td><button class="calc-num calc-btn">8</button></td>
+            <td><button class="calc-num calc-btn">7</button></td>
+            <td><button class="calc-sym calc-btn">÷</button></td>
           </tr>
           <tr>
-            <td><button class="calc-num">6</button></td>
-            <td><button class="calc-num">5</button></td>
-            <td><button class="calc-num">4</button></td>
-            <td><button class="calc-sym">x</button></td>
+            <td><button class="calc-num calc-btn">6</button></td>
+            <td><button class="calc-num calc-btn">5</button></td>
+            <td><button class="calc-num calc-btn">4</button></td>
+            <td><button class="calc-sym calc-btn">x</button></td>
           </tr>
           <tr>
-            <td><button class="calc-num">3</button></td>
-            <td><button class="calc-num">2</button></td>
-            <td><button class="calc-num">1</button></td>
-            <td><button class="calc-sym">-</button></td>
+            <td><button class="calc-num calc-btn">3</button></td>
+            <td><button class="calc-num calc-btn">2</button></td>
+            <td><button class="calc-num calc-btn">1</button></td>
+            <td><button class="calc-sym calc-btn">-</button></td>
           </tr>
           <tr>
-            <td><button class="calc-num">0</button></td>
-            <td><button class="calc-dot">.</button></td>
-            <td><button class="calc-equals">=</button></td>
-            <td><button class="calc-sym">+</button></td>
+            <td><button class="calc-num calc-btn">0</button></td>
+            <td><button class="calc-dot calc-btn">.</button></td>
+            <td><button class="calc-equals calc-btn">=</button></td>
+            <td><button class="calc-sym calc-btn">+</button></td>
           </tr>
         </table>
       </fieldset>

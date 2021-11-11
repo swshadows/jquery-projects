@@ -1,20 +1,19 @@
 // Constants and variables
 const CAE_CHARSET = "abcdefghijklmnopqrstuvwxyz";
 const CAE_CYPHER = "xyzabcdefghijklmnopqrstuvw";
+const CYPH_BTN = $("#cae-cyph-btn");
+const CAE_RESULTS = $("#cae-results");
+const DECYPH_BTN = $("#cae-decyph-btn");
 
+// Functions
 // Button to cypher
-$("#cae-cyph-btn").click(() => {
+CYPH_BTN.click(() => {
   let caeResult = "";
   let inputval = $("#cae-cyph-input").val();
   for (i = 0; i < inputval.length; i++) {
     caeResult += cyphering(caeResult, inputval[i].toLowerCase());
   }
-  if (caeResult != "") {
-    $("#cae-results").html(`Cyphered text: ${caeResult}`);
-    $("#cae-results").css("display", "block");
-  } else {
-    $("#cae-results").css("display", "none");
-  }
+  printResults(caeResult, "cyph");
 });
 
 // Cyphers result
@@ -34,18 +33,13 @@ function cyphering(result, currInput) {
 }
 
 // Button to decypher text
-$("#cae-decyph-btn").click(() => {
+DECYPH_BTN.click(() => {
   let caeResult = "";
   let inputval = $("#cae-decyph-input").val();
   for (i = 0; i < inputval.length; i++) {
     caeResult += decyphering(caeResult, inputval[i].toLowerCase());
   }
-  if (caeResult != "") {
-    $("#cae-results").html(`Decyphered text: ${caeResult}`);
-    $("#cae-results").css("display", "block");
-  } else {
-    $("#cae-results").css("display", "none");
-  }
+  printResults(caeResult, "decyph");
 });
 
 // Decypher result
@@ -62,4 +56,23 @@ function decyphering(result, currInput) {
   }
 
   return result;
+}
+
+// Prints results
+function printResults(arg, type) {
+  if (type == "cyph") {
+    if (arg != "") {
+      CAE_RESULTS.html(`Cyphered text: ${arg}`);
+      CAE_RESULTS.css("display", "block");
+    } else {
+      CAE_RESULTS.css("display", "none");
+    }
+  } else {
+    if (arg != "") {
+      CAE_RESULTS.html(`Decyphered text: ${arg}`);
+      CAE_RESULTS.css("display", "block");
+    } else {
+      CAE_RESULTS.css("display", "none");
+    }
+  }
 }

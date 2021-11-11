@@ -31,8 +31,7 @@ input {
   border-radius: 5px;
 }
 
-button,
-#mplayer-input-label {
+button {
   background-color: var(--nearblack);
   border: 1px solid var(--nearwhite);
   border-radius: 5px;
@@ -41,8 +40,7 @@ button,
   width: 126px;
 }
 
-button:hover,
-#mplayer-input-label:hover {
+button:hover {
   cursor: pointer;
   color: var(--nearblack);
   background-color: var(--nearwhite);
@@ -70,129 +68,3 @@ legend {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-/* !Index */
-#index-table td,
-#index-table th {
-  border: 1px solid var(--nearwhite);
-  padding: 5px;
-}
-
-#index-table {
-  margin-bottom: 10px;
-}
-
-#index-footer {
-  position: absolute;
-  bottom: 0;
-}
-
-/* !Caecypher App */
-/* Caesar cypher results paragraph */
-#cae-results {
-  display: none;
-  padding: 10px;
-  border: 1px solid var(--nearwhite);
-  border-radius: 5px;
-}
-
-/* !Calculatron App */
-/* Calculatron body */
-
-#calc-div,
-#calc-body {
-  margin: 0 auto;
-}
-
-#calc-div {
-  width: 40%;
-}
-/* Calculatron big button font */
-.calc-sym,
-.calc-num,
-.calc-dot,
-.calc-equals,
-.calc-AC,
-.calc-special,
-.calc-CE {
-  font-size: 0.9em;
-  width: 5rem;
-  border: none;
-}
-
-.calc-num {
-  background-color: var(--calcyell);
-  color: var(--nearblack);
-}
-
-/* Calculatron screens */
-#calc-results,
-#calc-screen,
-#calc-messages {
-  font-size: 15px;
-  width: 20rem;
-  display: block;
-  margin: 5px auto;
-  height: 2em;
-  background-color: var(--nearwhite);
-}
-
-#calc-messages {
-  color: var(--errorred);
-}
-
-/* !Diceroll App */
-/* Diceroll body */
-#dice-body {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* Dice images */
-.dice-img {
-  margin: 5px 5px 5px 0px;
-}
-
-/* Dice animations */
-.dice-show {
-  animation: dice-show 250ms 1;
-}
-
-.dice-fade {
-  animation: dice-fade 250ms 1;
-}
-@keyframes dice-show {
-  from {
-    width: 1px;
-  }
-  to {
-    width: 32px;
-  }
-}
-
-@keyframes dice-fade {
-  from {
-    width: 32px;
-  }
-  to {
-    width: 1px;
-  }
-}
-
-/* !MPlayer App */
-#mplayer-body {
-  text-align: center;
-  margin: 10px auto;
-  width: 50%;
-}
-
-audio,
-#mplayer-input {
-  margin: 0 auto;
-}
-
-#mplayer-input {
-  display: none;
-}
-
-/* Label is personalized alongside buttons on lines 33, 43 */

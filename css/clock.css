@@ -1,0 +1,55 @@
+/* Stuffs shared by some ids from crono and timer */
+#crono-body,
+#timer-body {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid var(--nearwhite);
+  border-radius: 10px;
+}
+
+#crono-laps {
+  width: 90%;
+  border: 1px dashed #6acb5c;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 5px 40px;
+}
+
+#crono-time,
+#timer-time {
+  text-align: center;
+  font-size: 50px;
+  color: #6acb5c;
+  margin: 0;
+  width: 100%;
+}
+
+/* General stuff for both timer and cronometer */
+.d-flcenter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+button {
+  margin: 0 5px;
+}
+
+input {
+  width: 80px;
+  margin: 0;
+  padding: 5px;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+}
+
+/* Timer thingies */
+#timer-hours {
+  border-radius: 10px 0px 0px 10px;
+}
+#timer-secs {
+  border-radius: 0px 10px 10px 0px;
+}

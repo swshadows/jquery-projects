@@ -1,0 +1,33 @@
+/* Divs and app body */
+#mplayer-body {
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+}
+
+/* Inputs styling */
+audio,
+#mplayer-input {
+  margin: 0 auto;
+}
+
+#mplayer-input {
+  display: none;
+}
+
+/* Label styling */
+#mplayer-input-label {
+  background-color: var(--nearblack);
+  border: 1px solid var(--nearwhite);
+  border-radius: 5px;
+  color: var(--nearwhite);
+  padding: 10px;
+  width: 126px;
+}
+
+#mplayer-input-label:hover {
+  cursor: pointer;
+  color: var(--nearblack);
+  background-color: var(--nearwhite);
+  border-color: var(--nearblack);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/refgen-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/refgen.css" />
+    <title>Reference Generator</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program formats bibliographic references based on your inputs.</p>
+    <p>Due to it being ABNT rules, some parts of this website will be in PT-BR</p>
+
+    <details>
+      <summary>For books</summary>
+      <button id="refgen-add-author">Add more authors</button>
+      <div class="refgen-div-author">
+        <p>Author Details</p>
+        <div class="refgen-subdiv-author">
+          <input class="refgen-authname-input" type="text" placeholder="Author" />
+          <input class="refgen-authsurname-input" type="text" placeholder="Surname" />
+        </div>
+      </div>
+      <div>
+        <p>Book Details</p>
+        <input id="refgen-title-input" type="text" placeholder="Title" />
+        <input id="refgen-edition-input" type="text" placeholder="Edition (U for unique)" />
+      </div>
+      <div>
+        <p>Publisher Details</p>
+        <input id="refgen-location-input" type="text" placeholder="Publishing Company Location" />
+        <input id="refgen-publisher-input" type="text" placeholder="Publishing Company" />
+        <input id="refgen-date-input" type="text" placeholder="Date of Publishing" />
+      </div>
+      <button id="refgen-generate">Generate</button>
+    </details>
+
+    <details>
+      <summary>For websites</summary>
+      <div class="refgen-div-author">
+        <p>Author Details</p>
+        <label for="refgen-wauthor-fant">Fantasy name?</label>
+        <input id="refgen-wauthor-fant" type="checkbox" />
+
+        <div id="refgen-wauthor-subdiv" class="refgen-subdiv-author">
+          <input class="refgen-wauthname-input" type="text" placeholder="Author" />
+          <input class="refgen-wauthsurname-input" type="text" placeholder="Surname" />
+        </div>
+      </div>
+      <div>
+        <p>Site Details</p>
+        <input id="refgen-wtitle-input" type="text" placeholder="Post Title" />
+        <input id="refgen-wnameholder-input" type="text" placeholder="Site Name Holder (ex: Wikipedia)" />
+        <input id="refgen-wdate-input" type="text" placeholder="Date of Publishing" />
+        <input id="refgen-wurl-input" type="text" placeholder="Site URL" />
+        <input id="refgen-waccess-input" type="text" placeholder="Access (ex: 13 de Outubro 2013)" />
+      </div>
+      <button id="refgen-wgenerate">Generate</button>
+    </details>
+
+    <div>
+      <p style="display: none" id="refgen-results"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/refgen.js"></script>
+  </body>
+</html>

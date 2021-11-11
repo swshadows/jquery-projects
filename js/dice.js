@@ -1,8 +1,9 @@
 // Constants and variables
 const DICES = [0, 1, 2, 3, 4, 5];
 let rolled = false;
-let val = $("#dice-container");
+const VAL = $("#dice-container");
 
+// Functions
 // Dynamically alocates the location of dice images in array
 for (i in DICES) {
   DICES[i] = `../assets/dices/dice-${parseInt(i) + 1}.png`;
@@ -20,12 +21,11 @@ $("#dice-add-btn").click(() => {
 // Adds a dice to the table
 function addDice(arg) {
   for (i = 0; i < arg; i++) {
-    val[0].innerHTML += `<img class="dice-show dice-img" src="${DICES[0]}" />`;
+    VAL[0].innerHTML += `<img class="dice-show dice-img" src="${DICES[0]}" />`;
   }
   setTimeout(() => {
     $(".dice-show").removeClass("dice-show");
   }, 230);
-  return val;
 }
 
 // Adjusts info: max min and dice quantity
@@ -75,7 +75,7 @@ function diceRandomAnimate(arg) {
 $("#dice-clear-btn").click(() => {
   $(".dice-img").addClass("dice-fade");
   setTimeout(() => {
-    val.html("");
+    VAL.html("");
   }, 230);
   rollAdj("clear");
 });

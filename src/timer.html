@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/clock-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/clock.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program is a simple timer, also known as a reverse cronometer.</p>
+
+    <div id="timer-body">
+      <div class="d-flcenter">
+        <input type="number" min="0" id="timer-hours" placeholder="Hours" />
+        <input type="number" min="0" max="59" id="timer-mins" placeholder="Minutes" />
+        <input type="number" min="1" max="59" id="timer-secs" placeholder="Seconds" />
+      </div>
+      <div class="d-flcenter">
+        <button id="timer-start">Start</button>
+        <button id="timer-reset">Stop</button>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Timetron</legend>
+          <p id="timer-time">00:00:00</p>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/timer.js"></script>
+  </body>
+</html>

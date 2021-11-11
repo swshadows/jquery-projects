@@ -1,0 +1,13 @@
+#index-table td,
+#index-table th {
+  border: 1px solid var(--nearwhite);
+  padding: 5px;
+}
+
+#index-table {
+  margin-bottom: 10px;
+}
+
+#index-footer {
+  margin: 50px 0 5px;
+}

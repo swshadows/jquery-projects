@@ -1,0 +1,5 @@
+/* Area where passwords are generated */
+textarea {
+  width: 500px;
+  height: 50px;
+}

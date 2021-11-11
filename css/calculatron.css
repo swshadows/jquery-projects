@@ -1,0 +1,33 @@
+/* Calculatron body */
+.calc-body {
+  margin: 0 auto;
+}
+
+#calc-div {
+  width: 40%;
+}
+/* Calculatron big button font */
+.calc-btn {
+  font-size: 0.9em;
+  width: 5rem;
+  border: none;
+}
+
+.calc-num {
+  background-color: var(--calcyell);
+  color: var(--nearblack);
+}
+
+/* Calculatron screens */
+.calc-screen {
+  font-size: 15px;
+  width: 20rem;
+  display: block;
+  margin: 5px auto;
+  height: 2em;
+  background-color: var(--nearwhite);
+}
+
+#calc-messages {
+  color: var(--errorred);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/hexpicker-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/hexpicker.css" type="text/css" />
+    <title>HEX Color Picker</title>
+  </head>
+  <body>
+    <a href="../index.html">Go back to the main page</a>
+    <p>This program converts color to hex code and vice-versa.</p>
+
+    <details class="hexpicker-details">
+      <summary>Convert Color to HEX</summary>
+      <label id="hexpicker-cthlabel" for="hexpicker-cthcolor">Select a color</label>
+      <div class="hexpicker-divs">
+        <input id="hexpicker-cthcolor" class="hexpicker-inputs" type="color" />
+        <input id="hexpicker-cthcode" class="hexpicker-inputs" type="text" disabled />
+        <button id="hexpicker-cthbtn">Copy to clipboard</button>
+      </div>
+    </details>
+
+    <details class="hexpicker-details">
+      <summary>Convert HEX to Color</summary>
+      <div class="hexpicker-divs">
+        <input id="hexpicker-htccode" class="hexpicker-inputs" type="text" placeholder="Input HEX code (numbers only)" />
+        <input id="hexpicker-htccolor" class="hexpicker-inputs" type="color" />
+      </div>
+    </details>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/hexpicker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/* Divs and details */
+.hexpicker-details {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.hexpicker-divs {
+  display: flex;
+  margin: 10px 0;
+}
+
+/* Color to hex customization */
+#hexpicker-cthcode {
+  background-color: var(--nearwhite);
+  color: var(--nearblack);
+}
+
+#hexpicker-cthcolor {
+  display: none;
+}
+
+.hexpicker-inputs {
+  height: 36px;
+  margin: 0 5px;
+  width: 15rem;
+  padding: 0.1em;
+  border: 1px solid var(--nearblack);
+  outline: none;
+}
+
+/* Label for hidden input */
+#hexpicker-cthlabel {
+  background-color: var(--nearblack);
+  border: 1px solid var(--nearwhite);
+  border-radius: 5px;
+  color: var(--nearwhite);
+  padding: 10px;
+  width: 126px;
+}
+
+#hexpicker-cthlabel:hover {
+  cursor: pointer;
+  color: var(--nearblack);
+  background-color: var(--nearwhite);
+  border-color: var(--nearblack);
+}
+
+/* Dblocks the label for design reasons */
+label {
+  margin: 10px 0 10px 5px;
+  display: block;
+}
