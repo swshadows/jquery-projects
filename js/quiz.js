@@ -101,9 +101,9 @@ QUIZ_ANSWER.click(() => {
   let ansradio = $("#quiz-gen-answer");
 
   if (ansradio.is(":checked", true)) {
-    QUIZ_Q.html(`<p>Resposta correta</p>`);
+    QUIZ_Q.html(`<p>Correct</p>`);
   } else {
-    QUIZ_Q.html(`<p>Resposta incorreta</p>`);
+    QUIZ_Q.html(`<p>Incorrect</p>`);
   }
 
   QUIZ_ANSWER.css("display", "none");
