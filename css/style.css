@@ -14,6 +14,7 @@ body {
   background-color: var(--nearblack);
 }
 
+a,
 a:visited {
   color: var(--linkcolor);
 }
