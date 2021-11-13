@@ -62,14 +62,14 @@ function decyphering(result, currInput) {
 function printResults(arg, type) {
   if (type == "cyph") {
     if (arg != "") {
-      CAE_RESULTS.html(`Cyphered text: ${arg}`);
+      CAE_RESULTS.html(`Texto cifrado: ${arg}`);
       CAE_RESULTS.css("display", "block");
     } else {
       CAE_RESULTS.css("display", "none");
     }
   } else {
     if (arg != "") {
-      CAE_RESULTS.html(`Decyphered text: ${arg}`);
+      CAE_RESULTS.html(`Texto decifrado: ${arg}`);
       CAE_RESULTS.css("display", "block");
     } else {
       CAE_RESULTS.css("display", "none");

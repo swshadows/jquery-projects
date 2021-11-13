@@ -79,7 +79,7 @@ function stopTimer(arg) {
   TIMER_TIME.html("00:00:00");
   if (arg == "end") {
     setTimeout(() => {
-      alert("TIMER ENDED");
+      alert("TEMPORIZADOR ACABOU");
     }, 10);
   }
 }

@@ -26,8 +26,8 @@ HTC_CODE.change(() => {
 
 // Visual feedback
 function copyHexFB(arg) {
-  arg.html("Copied");
+  arg.html("Copiado");
   setTimeout(() => {
-    arg.html("Copy to clipboard");
+    arg.html("Copiar para a área de transferência");
   }, 1500);
 }

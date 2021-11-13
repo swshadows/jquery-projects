@@ -65,7 +65,7 @@ $("#crono-reset").click(() => {
   secs = 0;
   mills = 0;
   CRONO_TIME.html(`0:00:0000`);
-  CRONO_LAPS.html(`<div class="d-flcenter">Lap Counter</div>`);
+  CRONO_LAPS.html(`<div class="d-flcenter">Contador de Laps</div>`);
 });
 
 // Registers a lap

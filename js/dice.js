@@ -31,8 +31,8 @@ function addDice(arg) {
 // Adjusts info: max min and dice quantity
 function rollAdj(arg) {
   let diceqty = $(".dice-img").length;
-  $("#dice-maxroll").html(`Max Possible Roll: ${diceqty * 6}`);
-  $("#dice-minroll").html(`Min Possible Roll: ${diceqty}`);
+  $("#dice-maxroll").html(`Roll máximo: ${diceqty * 6}`);
+  $("#dice-minroll").html(`Roll mínimo: ${diceqty}`);
   if (arg == "clear") {
     $("#dice-maxroll").html("");
     $("#dice-minroll").html("");

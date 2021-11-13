@@ -7,58 +7,57 @@
     <link rel="icon" href="../assets/icons/refgen-icon.png" type="image/png" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/refgen.css" />
-    <title>Reference Generator</title>
+    <title>Referências ABTN</title>
   </head>
   <body>
-    <a href="../index.html">Go back to the main page</a>
-    <p>This program formats bibliographic references based on your inputs.</p>
-    <p>Due to it being ABNT rules, some parts of this website will be in PT-BR</p>
+    <a href="../index.html">Voltar a página principal</a>
+    <p>Este programa formata referências bibliográficas com base em suas entradas.</p>
 
     <details>
-      <summary>For books</summary>
-      <button id="refgen-add-author">Add more authors</button>
+      <summary>Para livros</summary>
+      <button id="refgen-add-author">Adicionar mais autores</button>
       <div class="refgen-div-author">
-        <p>Author Details</p>
+        <p>Sobre o autor</p>
         <div class="refgen-subdiv-author">
-          <input class="refgen-authname-input" type="text" placeholder="Author" />
-          <input class="refgen-authsurname-input" type="text" placeholder="Surname" />
+          <input class="refgen-authname-input" type="text" placeholder="Nome" />
+          <input class="refgen-authsurname-input" type="text" placeholder="Sobrenome" />
         </div>
       </div>
       <div>
-        <p>Book Details</p>
-        <input id="refgen-title-input" type="text" placeholder="Title" />
-        <input id="refgen-edition-input" type="text" placeholder="Edition (U for unique)" />
+        <p>Sobre o livro</p>
+        <input id="refgen-title-input" type="text" placeholder="Titulo" />
+        <input id="refgen-edition-input" type="text" placeholder="Edição (U para única)" />
       </div>
       <div>
-        <p>Publisher Details</p>
-        <input id="refgen-location-input" type="text" placeholder="Publishing Company Location" />
-        <input id="refgen-publisher-input" type="text" placeholder="Publishing Company" />
-        <input id="refgen-date-input" type="text" placeholder="Date of Publishing" />
+        <p>Sobre a editora</p>
+        <input id="refgen-publisher-input" type="text" placeholder="Nome" />
+        <input id="refgen-location-input" type="text" placeholder="Localização" />
+        <input id="refgen-date-input" type="text" placeholder="Data de publicação" />
       </div>
-      <button id="refgen-generate">Generate</button>
+      <button id="refgen-generate">Gerar</button>
     </details>
 
     <details>
-      <summary>For websites</summary>
+      <summary>Para sites na internet</summary>
       <div class="refgen-div-author">
-        <p>Author Details</p>
-        <label for="refgen-wauthor-fant">Fantasy name?</label>
+        <p>Sobre o autor</p>
+        <label for="refgen-wauthor-fant">O autor usa um nome fantasia?</label>
         <input id="refgen-wauthor-fant" type="checkbox" />
 
         <div id="refgen-wauthor-subdiv" class="refgen-subdiv-author">
-          <input class="refgen-wauthname-input" type="text" placeholder="Author" />
-          <input class="refgen-wauthsurname-input" type="text" placeholder="Surname" />
+          <input class="refgen-wauthname-input" type="text" placeholder="Nome" />
+          <input class="refgen-wauthsurname-input" type="text" placeholder="Sobrenome" />
         </div>
       </div>
       <div>
-        <p>Site Details</p>
-        <input id="refgen-wtitle-input" type="text" placeholder="Post Title" />
-        <input id="refgen-wnameholder-input" type="text" placeholder="Site Name Holder (ex: Wikipedia)" />
-        <input id="refgen-wdate-input" type="text" placeholder="Date of Publishing" />
-        <input id="refgen-wurl-input" type="text" placeholder="Site URL" />
-        <input id="refgen-waccess-input" type="text" placeholder="Access (ex: 13 de Outubro 2013)" />
+        <p>Sobre o site</p>
+        <input id="refgen-wtitle-input" type="text" placeholder="Titulo da postagen" />
+        <input id="refgen-wnameholder-input" type="text" placeholder="Empresa do site (Ex: Wikipedia.com)" />
+        <input id="refgen-wdate-input" type="text" placeholder="Data da publicação" />
+        <input id="refgen-wurl-input" type="text" placeholder="URL do site" />
+        <input id="refgen-waccess-input" type="text" placeholder="Data de acesso por extenso" />
       </div>
-      <button id="refgen-wgenerate">Generate</button>
+      <button id="refgen-wgenerate">Gerar</button>
     </details>
 
     <div>

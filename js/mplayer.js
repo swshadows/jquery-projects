@@ -14,5 +14,5 @@ $("#mplayer-upl-btn").click(() => {
 function setMisc(arg) {
   let input = M_INPUT[0].files[0];
   let name = input.name;
-  arg.html(`Now playing: ${name}`);
+  arg.html(`Tocando agora: ${name}`);
 }

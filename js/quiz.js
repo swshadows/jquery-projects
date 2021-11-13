@@ -27,19 +27,19 @@ function genQuestion(type) {
   numpow = Math.round(Math.random() * 4);
   switch (type) {
     case "sum":
-      QUIZ_Q.html(`How much is ${num1} + ${num2}?`);
+      QUIZ_Q.html(`Quanto é ${num1} + ${num2}?`);
       answer = num1 + num2;
       break;
     case "sub":
-      QUIZ_Q.html(`How much is ${num1} - ${num2}?`);
+      QUIZ_Q.html(`Quanto é ${num1} - ${num2}?`);
       answer = num1 - num2;
       break;
     case "pow":
-      QUIZ_Q.html(`How much is ${num1} to the power of ${numpow}?`);
+      QUIZ_Q.html(`Quanto é ${num1} elevado a ${numpow}?`);
       answer = Math.pow(num1, numpow);
       break;
     case "mult":
-      QUIZ_Q.html(`How much is ${num1} times ${num2}?`);
+      QUIZ_Q.html(`Quanto é ${num1} vezes ${num2}?`);
       answer = num1 * num2;
       break;
     default:
@@ -101,9 +101,9 @@ QUIZ_ANSWER.click(() => {
   let ansradio = $("#quiz-gen-answer");
 
   if (ansradio.is(":checked", true)) {
-    QUIZ_Q.html(`<p>Correct</p>`);
+    QUIZ_Q.html(`<p>Correto</p>`);
   } else {
-    QUIZ_Q.html(`<p>Incorrect</p>`);
+    QUIZ_Q.html(`<p>Incorreto</p>`);
   }
 
   QUIZ_ANSWER.css("display", "none");

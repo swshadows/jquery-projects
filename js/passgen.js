@@ -41,8 +41,8 @@ PASS_COPY.click(() => {
 
 // Visual feedback
 function copyPassFB() {
-  PASS_COPY.html("Copied");
+  PASS_COPY.html("Copiado");
   setTimeout(() => {
-    PASS_COPY.html("Copy to clipboard");
+    PASS_COPY.html("Copiar para a área de transferência");
   }, 1500);
 }

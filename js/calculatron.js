@@ -139,10 +139,10 @@ $(".calc-CE").click(() => {
 function calcError(arg) {
   switch (arg) {
     case "missingNo":
-      $("#calc-messages").val("SYNTAX_ERROR: Missing numbers on screen");
+      $("#calc-messages").val("SYNTAX_ERROR: Faltam numeros");
       break;
     case "allClear":
-      $("#calc-messages").val("AC_Pressed: Calculatron values reset!");
+      $("#calc-messages").val("AC_Pressed: Valores resetados");
       $("#calc-messages").css("color", "#436d36");
       break;
   }

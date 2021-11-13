@@ -23,7 +23,7 @@ $("#refgen-generate").click(() => {
   // Formats and add title of book to biblio
   bibliography += `<strong>${TITLE.value}.</strong> `;
   // Checks edition on input and formats and adds edition to biblio
-  if (EDITION.value == "U") bibliography += `Ed. única, `;
+  if (EDITION.value == "U" || EDITION.value == "u") bibliography += `Ed. única, `;
   else bibliography += `${EDITION.value}ª ed., `;
   // Formats and adds the publishment details to biblio
   bibliography += `${PUB_LOC.value}: ${PUB_NAME.value}, ${PUB_YEAR.value}.`;
@@ -53,10 +53,10 @@ $("#refgen-wgenerate").click(() => {
 REF_FANT_AUTHOR.change(() => {
   const WAUTHORS = $("#refgen-wauthor-subdiv");
   if (REF_FANT_AUTHOR.is(":checked")) {
-    WAUTHORS.html(`<input class="refgen-wauthname-input" type="text" placeholder="Author" />`);
+    WAUTHORS.html(`<input class="refgen-wauthname-input" type="text" placeholder="Nome" />`);
   } else {
-    WAUTHORS.html(`<input class="refgen-wauthname-input" type="text" placeholder="Author" />
-    <input class="refgen-wauthsurname-input" type="text" placeholder="Surname" />`);
+    WAUTHORS.html(`<input class="refgen-wauthname-input" type="text" placeholder="Nome" />
+    <input class="refgen-wauthsurname-input" type="text" placeholder="Sobrenome" />`);
   }
 });
 
@@ -70,7 +70,7 @@ function printRef() {
 // Adds more authors inputs
 $("#refgen-add-author").click(() => {
   $(".refgen-div-author")[0].innerHTML += `<div class="refgen-subdiv-author">
-  <input class="refgen-authname-input" type="text" placeholder="Author" />
-  <input class="refgen-authsurname-input" type="text" placeholder="Surname" />
+  <input class="refgen-authname-input" type="text" placeholder="Nome" />
+  <input class="refgen-authsurname-input" type="text" placeholder="Sobrenome" />
 </div>`;
 });
