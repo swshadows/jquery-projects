@@ -1,4 +1,4 @@
-# jQuery Projects
+# swQuery
 
 <div align='center'>
     <img src="https://img.shields.io/badge/HTML5-informational?style=flat&logo=html5&logoColor=fff&color=000">
@@ -9,4 +9,4 @@
 
 **Meu repositório para micro-projetos em jQuery. Feitos para aprendizado e para incrementar o portfólio**
 
-Projeto lançado <a href="https://swshadows.github.io/jquery-projects/index.html">aqui</a>
+Projeto lançado <a href="https://swshadows.github.io/sw-query/index.html">aqui</a>
