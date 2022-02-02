@@ -9,4 +9,4 @@
 
 **Meu repositório para micro-projetos em jQuery. Feitos para aprendizado e para incrementar o portfólio**
 
-Projeto lançado <a href="https://swshadows.github.io/sw-query/index.html">aqui</a>
+Projeto lançado <a href="https://swshadows.github.io/swquery/index.html">aqui</a>
